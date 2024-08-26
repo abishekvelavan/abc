@@ -1,0 +1,102 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2563eb;
+}
+
+.nav-buttons .btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.demo-btn {
+  background-color: #00e5ff;
+  color: black;
+  border: none;
+}
+
+.btn.access-btn {
+  color: #00e5ff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #00e5ff;
+}
+
+.cta-buttons .btn {
+  margin-right: 15px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 100px 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 99, 235, 1) 0%,
+    rgba(30, 58, 138, 1) 100%
+  );
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  color: white;
+  width: 65%;
+  padding-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.4em;
+  margin-bottom: 80px;
+  width: 60%;
+  color: white;
+  line-height: 30px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+
+    .nav-buttons .btn {
+      margin: 10px 0;
+    }
+
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .hero-content {
+      max-width: 100%;
+    }
+  }
+}

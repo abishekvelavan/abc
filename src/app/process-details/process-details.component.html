@@ -1,0 +1,212 @@
+<div class="main">
+  <div class="header">
+    <div class="header-left">
+      <h3>Transform Your Cash Application Process</h3>
+    </div>
+    <div class="header-right">
+      <p>
+        Achieve touchless posting for 90% of payments while still retaining
+        control over exceptions that need a little extra human touch.
+      </p>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div
+      class="tab"
+      [ngClass]="{ active: tabName === 'instant-capture' }"
+      (click)="openTab('instant-capture')"
+    >
+      Instant Capture
+    </div>
+    <div
+      class="tab"
+      [ngClass]="{ active: tabName === 'accurate-match' }"
+      (click)="openTab('accurate-match')"
+    >
+      Accurate Match
+    </div>
+    <div
+      class="tab"
+      [ngClass]="{ active: tabName === 'remittance-extraction' }"
+      (click)="openTab('remittance-extraction')"
+    >
+      Remittance Extraction
+    </div>
+    <div
+      class="tab"
+      [ngClass]="{ active: tabName === 'exceptions-handling' }"
+      (click)="openTab('exceptions-handling')"
+    >
+      Exceptions Handling
+    </div>
+    <div
+      class="tab"
+      [ngClass]="{ active: tabName === 'touchless-posting' }"
+      (click)="openTab('touchless-posting')"
+    >
+      Touchless Posting
+    </div>
+  </div>
+
+  <div
+    *ngIf="tabName === 'instant-capture'"
+    class="content"
+    id="instant-capture"
+  >
+    <div class="left-content">
+      <h2>Instantly Capture All Incoming Payments</h2>
+      <p>
+        Still logging into each of your bank accounts and wrestling with
+        spreadsheets? Growfin integrates with your bank accounts to extract
+        every incoming transaction in real-time. It's almost magic.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon-container">
+            <img class="img" src="{{ logo1 }}" alt="My Image" />
+          </div>
+          <span>Integrates with all major banks</span>
+        </div>
+        <div class="separator"></div>
+        <div class="feature">
+          <div class="icon-container">
+            <span class="add">100%</span>
+          </div>
+          <span>Identification of all transactions</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img src="{{ imag1 }}" alt="My Image" />
+    </div>
+  </div>
+
+  <div *ngIf="tabName === 'accurate-match'" class="content" id="accurate-match">
+    <div class="left-content">
+      <h2>Accurate Match Payments to Customers</h2>
+      <p>
+        Dealing with curveballs like incorrect payment description? With
+        Growfin, the ML algorithm auto matches payments to customers. Reclaim
+        your time to focus on doubtful matches alone.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon-container">
+            <span class="add">99%</span>
+          </div>
+          <span>Accurate payment matching</span>
+        </div>
+        <div class="separator"></div>
+        <div class="feature">
+          <div class="icon-container">
+            <img class="img" src="{{ logo2 }}" alt="My Image" />
+          </div>
+          <span>Flags doubtful matches</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img src="{{ imag2 }}" alt="My Image" />
+    </div>
+  </div>
+
+  <div
+    class="content"
+    *ngIf="tabName === 'remittance-extraction'"
+    id="remittance-extraction"
+  >
+    <div class="left-content">
+      <h2>Automatically Extract Remittance Data</h2>
+      <p>
+        Say goodbye to manual remittance extraction. Growfin automatically
+        extracts remittance data from email, PDF, CSV, XLS, or even Cheque, and
+        auto-matches to their respective payments.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon-container">
+            <span class="add">80-90%</span>
+          </div>
+          <span>Extraction accuracy for CSV and emails</span>
+        </div>
+        <div class="separator"></div>
+        <div class="feature">
+          <div class="icon-container">
+            <span class="add">50-70%</span>
+          </div>
+          <span>Extraction accuracy for PDFs</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img src="{{ imag3 }}" alt="My Image" />
+    </div>
+  </div>
+
+  <div
+    class="content"
+    *ngIf="tabName === 'exceptions-handling'"
+    id="exceptions-handling"
+  >
+    <div class="left-content">
+      <h2>Effortlessly Manage Short or Bulk Payments</h2>
+      <p>
+        Growfin's SmartMatch AI can accurately identify payment adjustments like
+        bank charges, taxes or discount. Simply configure settings at an acount
+        or customer level and ypu're good to go!
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon-container">
+            <img src="{{ logo3 }}" alt="My Image" />
+          </div>
+          <span>predicts adjustments based on pattern</span>
+        </div>
+        <div class="separator"></div>
+        <div class="feature">
+          <div class="icon-container">
+            <img class="img" src="{{ logo4 }}" alt="My Image" />
+          </div>
+          <span>Handle adjustments at payment or invoice level</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img src="{{ imag4 }}" alt="My Image" />
+    </div>
+  </div>
+
+  <div
+    class="content"
+    *ngIf="tabName === 'touchless-posting'"
+    id="touchless-posting"
+  >
+    <div class="left-content">
+      <h2>Achieve Straight Through Posting</h2>
+      <p>
+        Manually managing cash application while the sword of audit dangles over
+        your head is a nightmare. With Growfin, achieve same-day close with
+        ML-based auto matching and posting to ERP.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="icon-container">
+            <span class="add">90%</span>
+          </div>
+          <span>Straight-through posting</span>
+        </div>
+        <div class="separator"></div>
+        <div class="feature">
+          <div class="icon-container">
+            <img class="img" src="{{ logo5 }}" alt="My Image" />
+          </div>
+          <span>Touchless posting options</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <img src="{{ imag5 }}" alt="My Image" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="testimonial-container">
+  <div class="quote-wrapper">
+    <div class="line"></div>
+    <div class="icon">
+      <span>❝</span>
+    </div>
+    <div class="line"></div>
+  </div>
+  <div class="testimonial-content" id="content1">
+    <p>
+      <strong
+        >“Growfin’s Cash Application has helped us streamline the entire cash
+        application process with less manual intervention & timely posting of
+        payments. We were able to achieve one of our key objectives within
+        months of going live.”</strong
+      >
+    </p>
+    <p class="author">
+      – Rohit Namboodiri, <span class="designation">AR Manager, Locus</span>
+    </p>
+  </div>
+  <div class="testimonial-content" id="content2" style="display: none">
+    <p>
+      <strong
+        >“Our manual effort has been reduced by 50%. My cash application
+        specialist can now spend just 30 minutes and get the whole job
+        done.”</strong
+      >
+    </p>
+    <p class="author">
+      – Dhwani Pathak,
+      <span class="designation">Sr. Manager - Finance, MindTickle</span>
+    </p>
+  </div>
+  <div class="round-indicators">
+    <span class="round active" (click)="showContent('content1', $event)"></span>
+    <span class="round" (click)="showContent('content2', $event)"></span>
+  </div>
+</div>

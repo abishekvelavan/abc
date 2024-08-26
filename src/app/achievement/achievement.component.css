@@ -1,0 +1,151 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  background-image: linear-gradient(to bottom, #2563eb, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 300%;
+  width: 80%;
+  padding-left: 250px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-section {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.info-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 22px 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.info-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #2646ad;
+  margin-right: 15px;
+}
+
+.text {
+  display: flex;
+  align-items: left;
+}
+
+.percentage {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: black;
+  margin-right: 10px;
+  margin-left: 30px;
+  width: 120px;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: #333;
+  text-align: left;
+}
+
+.info-item img {
+  flex: 0 0 15%;
+  margin-right: 2px;
+}
+
+.info-item .percentage {
+  flex: 0 0 30%;
+  margin-right: 2px;
+}
+
+.info-item .description {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .profile-section,
+  .info-section {
+    max-width: 100%;
+  }
+
+  .info-section {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .info-item {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .info-item:not(:last-child)::after {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 30px 200px 30px 200px;
+}
+
+.image-container1 {
+  width: 20%;
+}
+
+.image-container1 img {
+  width: 100%;
+  height: auto;
+}
